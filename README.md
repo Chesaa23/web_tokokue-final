@@ -6,31 +6,22 @@ Project ini adalah RESTful API untuk Web E-Commerce Toko Kue, dibuat menggunakan
 🔑 Autentikasi & User
 
 Register
-
 Login
-
 Hash password (bcrypt)
 
 
 🎂 Produk
 
 Tambah produk
-
 Tampilkan semua produk
-
 Tampilkan produk berdasarkan ID
-
 Edit produk
-
 Hapus produk
 
 
 🛒 Keranjang & Transaksi
-
 Tambah ke keranjang
-
 Checkout
-
 Riwayat pesanan
 
 📡 Endpoint API
@@ -59,11 +50,9 @@ POST	/api/checkout	Checkout
 🌐 Frontend (React.js)
 
 Backend ini digunakan oleh frontend React.js pada repo berbeda:
-
 https://github.com/username/toko-kue-fe
 
 📝 Lisensi
-
 Project ini dibuat untuk pembelajaran dan bebas digunakan.
 
 anggota kelompok:
