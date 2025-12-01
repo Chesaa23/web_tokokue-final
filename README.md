@@ -1,63 +1,65 @@
-🍰 Toko Kue — RESTful API (Express.js)
+🍰 Toko Kue — Backend RESTful API (Express.js)
 
-Project ini adalah RESTful API untuk Web E-Commerce Toko Kue, dibuat menggunakan Node.js + Express.js dengan database MySQL. API ini digunakan untuk mengelola produk, pengguna, dan transaksi pemesanan kue yang akan ditampilkan di frontend React.js.
-
-🚀 Fitur Utama
-🔑 Autentikasi & User
-
-Register
-Login
-Hash password (bcrypt)
+Dokumen ini merupakan panduan resmi untuk backend Web E-Commerce Toko Kue yang dikembangkan menggunakan Node.js, Express.js, dan MySQL. Sistem ini menyediakan layanan API untuk pengelolaan produk, autentikasi pengguna, serta proses transaksi yang dapat digunakan oleh aplikasi frontend (React.js).
 
 
-🎂 Produk
-
-Tambah produk
-Tampilkan semua produk
-Tampilkan produk berdasarkan ID
-Edit produk
-Hapus produk
+1. Deskripsi Proyek
+Backend Toko Kue dirancang sebagai layanan RESTful API yang menyediakan fitur utama seperti manajemen produk, autentikasi pengguna, serta pemrosesan keranjang dan transaksi. API ini menjembatani komunikasi antara frontend dan database.
+Sistem dikembangkan dengan memperhatikan prinsip keamanan, skalabilitas, serta kemudahan integrasi.
 
 
-🛒 Keranjang & Transaksi
-Tambah ke keranjang
-Checkout
-Riwayat pesanan
+2. Fitur Utama
+2.1 Autentikasi dan Pengguna
 
-📡 Endpoint API
-👤 Auth
+Registrasi akun pengguna
+Login menggunakan JSON Web Token (JWT)
+Enkripsi kata sandi menggunakan bcrypt
+Proteksi endpoint untuk pengguna yang terautentikasi
+
+
+2.2 Manajemen Produk
+
+Menambahkan produk baru
+Mengambil daftar seluruh produk
+Mengambil produk berdasarkan ID
+Memperbarui data produk
+Menghapus produk
+Upload gambar produk menggunakan Multer
+
+
+2.3 Transaksi dan Keranjang
+
+Menambahkan produk ke keranjang
+Melihat isi keranjang pengguna
+Melakukan checkout pesanan
+Menyimpan riwayat transaksi
+
+Dokumentasi Endpoint
+2.1 Autentikasi (Auth)
 Method	Endpoint	Deskripsi
-POST	/api/auth/register	Registrasi user
-POST	/api/auth/login	Login user
+POST	/api/auth/register	Registrasi pengguna baru
+POST	/api/auth/login	Login dan mendapatkan token JWT
 
-🎂 Produk
+
+4.2 Produk (Product)
 Method	Endpoint	Deskripsi
-GET	/api/products	Ambil semua produk
-GET	/api/products/:id	Detail produk
-POST	/api/products	Tambah produk
-PUT	/api/products/:id	Update produk
-DELETE	/api/products/:id	Hapus produk
+GET	/api/products	Mendapatkan seluruh produk
+GET	/api/products/:id	Mendapatkan detail produk
+POST	/api/products	Menambahkan produk baru
+PUT	/api/products/:id	Memperbarui produk
+DELETE	/api/products/:id	Menghapus produk
 
-🛒 Keranjang & Checkout
 
-(opsional jika kamu ingin fitur lanjut)
-
+2.3 Keranjang dan Transaksi
 Method	Endpoint	Deskripsi
-POST	/api/cart	Tambah ke keranjang
-GET	/api/cart	Lihat keranjang user
-POST	/api/checkout	Checkout
+POST	/api/cart	Menambahkan produk ke keranjang
+GET	/api/cart	Melihat keranjang pengguna
+POST	/api/checkout	Melakukan checkout
 
-🌐 Frontend (React.js)
 
-Backend ini digunakan oleh frontend React.js pada repo berbeda:
-https://github.com/username/toko-kue-fe
+Lisensi
+Proyek ini dibuat untuk tujuan pembelajaran dan dapat digunakan, dimodifikasi, serta dikembangkan lebih lanjut tanpa batasan.
 
-📝 Lisensi
-Project ini dibuat untuk pembelajaran dan bebas digunakan.
 
-anggota kelompok:
-
-chesa khansa l (delate)
-ridwan ()
-lhutfi ()
-adit ()
+anggota kelompok 1 : 
+chesa(delate) ridwan() aditiya() lhutfi()
